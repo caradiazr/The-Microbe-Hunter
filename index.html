@@ -11,43 +11,52 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 			<head>
-				  …
-				  <link rel="stylesheet" href="assets/css/main.css" />
-				
-				  <!-- Dark grey background + mid-grey sidebar -->
-				  <style>
-					    /* 1) Base dark background everywhere */
-					    html, body,
-					    #wrapper, .wrapper,
-					    .wrapper > .inner,
-					    section, header, footer,
-					     .spotlight > .content {
-					      background-color: #272727 !important; /* rgb(39,39,39) */
-					      color:            #fff     !important;
-					    }
-					
-					    /* 2) Right-hand “sidebar” panel a slightly lighter grey */
-					    #sidebar,
-					    #sidebar .inner {
-					      background-color: #808487 !important; /* rgb(59,61,61) */
-					    }
-					
-					    /* 3) Ensure text/links stay white */
-					    a, h1, h2, h3, h4, h5, h6,
-					    p, blockquote, span, li, label,
-					    input, textarea, button {
-					      color: #fff !important;
-					    }
+  …
+  <link rel="stylesheet" href="assets/css/main.css" />
 
-						/* All spotlight sections’ content boxes */
-						    .spotlight .content, .panel,
-						    .spotlight.alt .content {
-						      background-color: #808487 !important; /* your light grey */
-						    }
+  <!-- 1) Global dark canvas (kept as you already have it) -->
+  <style>
+    html, body,
+    #wrapper, .wrapper,
+    .wrapper > .inner,
+    section, header, footer,
+    .spotlight > .content {
+      background-color: #272727 !important; /* dark background */
+      color:            #fff     !important; /* white text */
+    }
 
-					  
-				  </style>
-			</head>
+    /* 2) Entire right‐hand panel → light grey */
+    #sidebar,
+    #sidebar > .inner {
+      background-color: #808487 !important; /* your light grey */
+      color:            #fff     !important; /* ensure text stays white */
+    }
+
+    /* 3) Sidebar header text (Doctor in Astrophysics…) */
+    #sidebar header p {
+      color: #fff !important;
+      opacity: 0.8; /* matches that slightly faded white text */
+    }
+
+    /* 4) Sidebar menu items styling */
+    #sidebar nav ul li a {
+      display: block;
+      background-color: #808487 !important;     /* same light grey */
+      color:            #fff     !important;     /* white text */
+      border-bottom:    1px solid #5A5D5D !important;
+      padding:          0.75em 1em;
+      text-decoration:  none;
+      opacity:          0.9;
+    }
+
+    /* 5) Active item = dark bar */
+    #sidebar nav ul li a.active {
+      background-color: #111111 !important;     /* nearly black */
+      opacity:          1 !important;
+    }
+  </style>
+</head>
+
 	
 	</head>
 	<body class="is-preload">
