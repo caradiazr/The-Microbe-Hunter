@@ -10,29 +10,36 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-		  /* 1) Global page containers */
-		  html, body,
-		  #wrapper, .wrapper,
-		  .wrapper > .inner,
-		  section, header, footer,
-		  .panel, .spotlight > .content {
-		    background-color: #000 !important;
-		    color:            #fff !important;
-		  }
-		
-		  /* 2) Force most text to white */
-		  a, h1, h2, h3, h4, h5, h6,
-		  p, blockquote, span, li, label,
-		  input, textarea, button {
-		    color: #fff !important;
-		  }
-		
-		  /* 3) If there are semi-transparent overlays */
-		  .overlay {
-		    background: rgba(0, 0, 0, 0.8) !important;
-		  }
-		</style>
+			<head>
+  …
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!-- Dark grey background + mid-grey sidebar -->
+	  <style>
+	    /* 1) Base dark background everywhere */
+	    html, body,
+	    #wrapper, .wrapper,
+	    .wrapper > .inner,
+	    section, header, footer,
+	    .panel, .spotlight > .content {
+	      background-color: #272727 !important; /* rgb(39,39,39) */
+	      color:            #fff     !important;
+	    }
+	
+	    /* 2) Right-hand “sidebar” panel a slightly lighter grey */
+	    #sidebar,
+	    #sidebar .inner {
+	      background-color: #3B3D3D !important; /* rgb(59,61,61) */
+	    }
+	
+	    /* 3) Ensure text/links stay white */
+	    a, h1, h2, h3, h4, h5, h6,
+	    p, blockquote, span, li, label,
+	    input, textarea, button {
+	      color: #fff !important;
+	    }
+	  </style>
+</head>
 
 	</head>
 	<body class="is-preload">
