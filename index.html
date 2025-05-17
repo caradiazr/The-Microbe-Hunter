@@ -11,17 +11,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-		  /* body background + all text */
-		  body {
-		    background: #000 !important;
-		    color:     #fff !important;
+		  /* 1) Global page containers */
+		  html, body,
+		  #wrapper, .wrapper,
+		  .wrapper > .inner,
+		  section, header, footer,
+		  .panel, .spotlight > .content {
+		    background-color: #000 !important;
+		    color:            #fff !important;
 		  }
-		  /* make sure links, headings, lists, etc inherit white */
+		
+		  /* 2) Force most text to white */
 		  a, h1, h2, h3, h4, h5, h6,
-		  p, span, li, label, input, button {
+		  p, blockquote, span, li, label,
+		  input, textarea, button {
 		    color: #fff !important;
 		  }
+		
+		  /* 3) If there are semi-transparent overlays */
+		  .overlay {
+		    background: rgba(0, 0, 0, 0.8) !important;
+		  }
 		</style>
+
 	</head>
 	<body class="is-preload">
 
