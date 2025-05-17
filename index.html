@@ -10,48 +10,37 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-				<style>
-					  /* 1) Keep your overall dark background */
-					  html, body,
-					  #wrapper, .wrapper,
-					  .wrapper > .inner,
-					  section, header, footer,
-					  .panel, .spotlight > .content {
-					    background-color: #272727 !important; /* your dark canvas */
-					    color:            #fff     !important;
-					  }
-					
-					  /* 2) Sidebar container stays mid-grey */
-					  #sidebar,
-					  #sidebar .inner {
-					    background-color: #3B3D3D !important; /* mid-grey for the list */
-					  }
-					
-					  /* 3) Sidebar links – all white text, light grey borders */
-					  #sidebar a {
-					    display: block;
-					    color:            #fff       !important;
-					    background-color: #6F7373   !important;  /* slightly lighter grey */
-					    border-bottom:    1px solid #5A5D5D     !important;
-					    padding:          0.75em 1em;
-					    text-decoration:  none;
-					  }
-					
-					  /* 4) Active/hover state – pure dark for the selected item */
-					  #sidebar a.active,
-					  #sidebar a:hover {
-					    background-color: #111111 !important; /* nearly black */
-					  }
-					
-					  /* 5) Tidy up: remove default list styles */
-					  #sidebar ul {
-					    list-style: none;
-					    margin: 0;
-					    padding: 0;
-					  }
-			   </style>
-
-
+			<head>
+				  …
+				  <link rel="stylesheet" href="assets/css/main.css" />
+				
+				  <!-- Dark grey background + mid-grey sidebar -->
+				  <style>
+				    /* 1) Base dark background everywhere */
+				    html, body,
+				    #wrapper, .wrapper,
+				    .wrapper > .inner,
+				    section, header, footer,
+				    .panel, .spotlight > .content {
+				      background-color: #272727 !important; /* rgb(39,39,39) */
+				      color:            #fff     !important;
+				    }
+				
+				    /* 2) Right-hand “sidebar” panel a slightly lighter grey */
+				    #sidebar,
+				    #sidebar .inner {
+				      background-color: #3B3D3D !important; /* rgb(59,61,61) */
+				    }
+				
+				    /* 3) Ensure text/links stay white */
+				    a, h1, h2, h3, h4, h5, h6,
+				    p, blockquote, span, li, label,
+				    input, textarea, button {
+				      color: #fff !important;
+				    }
+				  </style>
+			</head>
+	
 	</head>
 	<body class="is-preload">
 
